@@ -1,10 +1,10 @@
-import DashboardPage from '@/pages/app/DashboardPage'
+import UsersPage from '@/pages/app/UsersPage'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <DashboardPage />
+        <UsersPage/>
     </div>
   )
 }
