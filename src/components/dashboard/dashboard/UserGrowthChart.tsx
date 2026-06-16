@@ -15,7 +15,7 @@ const UserGrowthChart = () => {
         <div className="bg-white rounded-2xl border border-zinc-100/80 p-6 shadow-[0_2px_8px_rgba(0,0,0,0.02)] select-none">
             <h3 className="text-lg font-bold text-title mb-6">User Growth</h3>
             <div className="w-full h-[320px]">
-                <ResponsiveContainer width="100%" height="100%">
+                <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                     <LineChart data={data} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                         <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#F1F1F4" />
                         <XAxis

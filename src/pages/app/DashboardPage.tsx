@@ -1,8 +1,10 @@
 import React from "react"
 import DashboardChildrenLayout from "@/components/shared/DashboardChildrenLayout"
 import DashboardStats from "@/components/dashboard/dashboard/DashboardStats"
-import UserGrowthChart from "@/components/dashboard/dashboard/UserGrowthChart"
-import PopularChannelsChart from "@/components/dashboard/dashboard/PopularChannelsChart"
+import dynamic from "next/dynamic"
+
+const UserGrowthChart = dynamic(() => import("@/components/dashboard/dashboard/UserGrowthChart"), { ssr: false })
+const PopularChannelsChart = dynamic(() => import("@/components/dashboard/dashboard/PopularChannelsChart"), { ssr: false })
 import RecentActivity from "@/components/dashboard/dashboard/RecentActivity"
 
 const DashboardPage = () => {
